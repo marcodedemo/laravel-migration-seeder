@@ -13,7 +13,7 @@
         <div class="card" style="width: 18rem;">
             <div class="card-body">
               <h5 class="card-title">{{$train->Azienda}}</h5>
-              <h6 class="card-subtitle mb-2 text-muted">{{$train->Codice_treno}}</h6>
+              <h6 class="card-subtitle mb-2 text-muted">Code: {{$train->Codice_treno}}</h6>
               <div class="card-text">
 
                 <div><strong>Data di Partenza: </strong>{{$train->Data_partenza}}</div>
@@ -23,9 +23,6 @@
                 <div><strong>Orario di Arrivo: </strong>{{substr($train->Orario_arrivo, 0 , 5)}}</div>
                 <div><strong>Numero di Carrozze: </strong>{{$train->Numero_carrozze}}</div>
                 
-
-
-
               </div>
 
             </div>
