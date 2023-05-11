@@ -5,7 +5,7 @@
 
     <h1>Treni Della Settimana</h1>
 
-    <div class="container d-flex flex-wrap justify-content-center gap-3">
+    <div id="train-info-container" class="container d-flex flex-wrap justify-content-center gap-3">
 
 
         @foreach ($trains as $train)
