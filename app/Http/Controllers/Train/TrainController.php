@@ -9,7 +9,7 @@ use Illuminate\Http\Request;
 class TrainController extends Controller
 {
     public function index(){
-        $trains = Train::all()->sortBy('Data_partenza');
+        $trains = Train::all()->where('Data_partenza', '>=', now())->sortBy('Data_partenza');
 
         return view('home', compact('trains'));   
     }
