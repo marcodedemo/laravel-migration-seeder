@@ -17,7 +17,6 @@
               <div class="card-text">
 
 
-                <div><strong>Data di Partenza: </strong>{{$train->data_partenza}}</div>
                 <div><strong>Stazione di Partenza: </strong>{{$train->stazione_partenza}}</div>
                 <div><strong>Orario di Partenza: </strong>{{substr($train->orario_partenza, 0 , 5)}}</div>
                 <div><strong>Stazione di Arrivo: </strong>{{$train->stazione_arrivo}}</div>
