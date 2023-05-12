@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::table('trains', function (Blueprint $table) {
 
-            $table->date('Data_partenza')->nullable()->after('Numero_carrozze');
+            $table->date('data_partenza')->nullable()->after('numero_carrozze');
         });
     }
 
@@ -28,7 +28,7 @@ return new class extends Migration
     {
         Schema::table('trains', function (Blueprint $table) {
             
-            $table->dropColumn('Data_partenza');
+            $table->dropColumn('data_partenza');
         });
     }
 };
